@@ -61,6 +61,7 @@
     <Compile Include="Assets\TributeToChiefs\_3rdParty\LoopScrollrect\Scripts\ListBank.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\LoopScrollrect\Scripts\ListPositionCtrl.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\LoopScrollrect\Scripts\ListBox.cs" />
+    <Compile Include="Assets\UIManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
