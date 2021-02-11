@@ -7,8 +7,7 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
-
-    public Image[] backgroundImages;
+    
     public SlideshowController slideshowController;
 
     [HideInInspector]

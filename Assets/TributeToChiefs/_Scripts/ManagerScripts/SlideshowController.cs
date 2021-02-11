@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class SlideshowController : MonoBehaviour
 {
     public RectTransform landingPage;
-    public Sprite landingSprite;
     public RectTransform[] rectTransforms;
 
 
@@ -18,7 +17,7 @@ public class SlideshowController : MonoBehaviour
 
     public void SlideShow()
     {
-        landingPage.DOAnchorPos(new Vector2(2700, 0), 0f).SetDelay(5f);
+        landingPage.DOLocalMove(new Vector2(2700, 0), 0f);
         InvokeRepeating("Slides", 0f, 81.5f);
     }
 
