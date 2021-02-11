@@ -40,7 +40,7 @@ public class UIManager : MonoBehaviour
     private void Update()
     {
         //user has entered withing the range of the sensor
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
             slideShowDisplay1 = true;
         if (Input.GetKey(KeyCode.DownArrow))
             slideShowDisplay2 = true;
@@ -50,39 +50,37 @@ public class UIManager : MonoBehaviour
             slideShowDisplay4 = true;
 
         //user has left the range of the sensor
-        if (Input.GetKeyUp(KeyCode.UpArrow))
+        if (Input.GetKeyUp(KeyCode.A))
             slideShowDisplay1 = false;
-        if (Input.GetKeyUp(KeyCode.DownArrow))
+        if (Input.GetKeyUp(KeyCode.B))
             slideShowDisplay2 = false;
-        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        if (Input.GetKeyUp(KeyCode.C))
             slideShowDisplay3 = false;
-        if (Input.GetKeyUp(KeyCode.RightArrow))
+        if (Input.GetKeyUp(KeyCode.D))
             slideShowDisplay4 = false;
 
         //start slideshow or show landing page
         if (slideShowDisplay1)
+        {
             slideshowController.SlideShow();
+            slideShowDisplay1 = false;
+        }
         else
-            //slideshowController.ShowLandingPage(backgroundImages[0]);
+            //slideshowController.ShowLandingPage();
 
         if (slideShowDisplay2)
             slideshowController.SlideShow();
         else
-            slideshowController.ShowLandingPage(backgroundImages[1]);
+            slideshowController.ShowLandingPage();
 
         if (slideShowDisplay3)
             slideshowController.SlideShow();
         else
-            slideshowController.ShowLandingPage(backgroundImages[2]);
+            slideshowController.ShowLandingPage();
 
         if (slideShowDisplay4)
             slideshowController.SlideShow();
         else
-            slideshowController.ShowLandingPage(backgroundImages[3]);
+            slideshowController.ShowLandingPage();
     }
-
-    //public void OnBottomImageClicked(Button button)
-    //{
-    //    backgroundImage.sprite = button.GetComponent<Image>().sprite;
-    //}
 }

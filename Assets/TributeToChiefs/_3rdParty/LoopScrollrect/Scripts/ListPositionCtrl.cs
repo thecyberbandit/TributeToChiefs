@@ -170,7 +170,7 @@ public class ListPositionCtrl : MonoBehaviour, IControlEventHandler
 
 				_scrollHandler = delegate (Vector2 v) { };
 				foreach (Button button in controlButtons)
-					button.gameObject.SetActive(false);
+					button.gameObject.SetActive(true);
 				break;
 
 			case ControlMode.Button:
