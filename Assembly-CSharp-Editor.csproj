@@ -61,6 +61,7 @@
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Editors\ExitNodeEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Windows\NodyWindowEditorSettings.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\GUI\Scripts\StylesBuilder.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Editor\ColorPickerPresetsEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\UIButton\UIButtonEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Animation\FadeDrawer.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Nodes\Editors\PortalNodeEditor.cs" />
@@ -83,10 +84,12 @@
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Windows\NodyWindow.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\SceneManagement\SceneDirectorEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Nodes\GUIs\ApplicationQuitNodeGUI.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Editor\TextPicIconListCopier.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\GUI\Scripts\DGUI\Properties.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Nodes\GUIs\WaitNodeGUI.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Windows\DoozyWindowDrawViewDebug.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Themes\ColorTargetRawImageEditor.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Editor\CanvasGroupActivator.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\NodeGUI\BaseNodeGUI.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Windows\DoozyWindowDrawViewPopups.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Windows\NodyWindowMethodsForSelection.cs" />
@@ -127,6 +130,7 @@
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\GUI\Scripts\DGUI\Bar.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\GUI\Scripts\DGUI\Button.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Nodes\Editors\BackButtonNodeEditor.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Editor\ScrollPositionControllerEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Themes\SpriteTargetUnityEventEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\GUI\Scripts\DGUI\Background.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Themes\ColorTargetUnityEventEditor.cs" />
@@ -136,6 +140,7 @@
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Themes\ColorTargetTextEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Editors\StartNodeEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Windows\NodyWindowDetectKeys.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Editor\BoxSliderEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Internal\FoldersProcessor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Windows\DoozyWindowDrawViewNody.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Internal\DProperty.cs" />
@@ -143,13 +148,15 @@
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Nodes\GUIs\UINodeGUI.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Enums\ToggleState.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Windows\NodyWindowDatabases.cs" />
-    <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Internal\ProcessorsSettings.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Editor\uGUITools.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\UIView\UIViewListenerEditor.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Internal\ProcessorsSettings.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Themes\FontTargetTextMeshProEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Windows\DoozyWindowDrawViewGeneral.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Windows\DoozyWindowDrawViewSoundy.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\GUI\Scripts\DGUI\Sizes.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Enums\PropertyName.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Editor\CUIGraphicEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\GUI\Scripts\DGUI\Doozy.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\GUI\Scripts\DGUI\Dropdown.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Input\KeyToActionEditor.cs" />
@@ -167,18 +174,20 @@
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Windows\DoozyWindow.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Windows\NodyWindowDraw.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Windows\NodyWindowDrawViews.cs" />
-    <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\GUI\Scripts\DGUI\List.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Nodes\Editors\GameEventNodeEditor.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\GUI\Scripts\DGUI\List.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Nodes\Editors\ThemeNodeEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Animation\BaseAnimationDrawer.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Orientation\OrientationDetectorEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Windows\DoozyWindowDrawViewViews.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Editor\TextPicIconEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Windows\NodyWindowMethodsForSockets.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Drawers\AnimatorEventDrawer.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Windows\NodyWindowMethodsForDragging.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Themes\ColorTargetSpriteRendererEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Windows\DoozyWindowDrawViewDrawers.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Utils\GraphUtils.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Editor\BezierLineRendererEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Animation\UIAnimationsEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\GUI\Scripts\DGUI\IconGroup.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Animation\MoveDrawer.cs" />
@@ -199,12 +208,15 @@
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Animation\RotateDrawer.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Animation\ScaleDrawer.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Nodes\Editors\WaitNodeEditor.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Editor\AccordionElementEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Drawers\RangedFloatDrawer.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Examples\Scripts\Editor\UIButtonAutomatedTextValueEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Input\BackButtonEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Nodes\Editors\ApplicationQuitNodeEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Windows\DoozyWindowButtons.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Drawers\MColorDrawer.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Editor\CUIBezierCurveEditor.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Editor\NonDrawingGraphicEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Enums\TextAlign.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Editors\GraphEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Themes\ThemeManagerEditor.cs" />
@@ -229,8 +241,10 @@
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Windows\NodyWindowReflection.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Editors\GraphControllerEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Progress\ProgressorEditor.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Editor\TextPicRenameEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Windows\NodyWindowMethodsForNodes.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Windows\NodyWindowDrawViewGeneral.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Editor\TextPicEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Windows\DoozyWindowEditorSettings.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\GUI\Scripts\DGUI\Utility.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Windows\NodyWindowClassVirtualConnection.cs" />
@@ -239,11 +253,13 @@
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Internal\InfoMessage.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\GUI\Scripts\DGUI\Copyright.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Windows\NodyWindowStyles.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Editor\ReadOnlyDrawer.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Internal\DoozyUIVersion.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\UICanvas\UICanvasEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Internal\BaseEditorWindow.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\GUI\Scripts\DGUI\Line.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Internal\DGUIContent.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Editor\CUIImageEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Windows\NodyWindowClassGraphTab.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\UIDrawer\UIDrawerEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Themes\ColorTargetImageEditor.cs" />
@@ -288,6 +304,7 @@
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Animation\UIAnimationUtils.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Windows\NodyWindowMethodsForPosition.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Windows\DoozyWindowDrawViewTouchy.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Editor\CUITextEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Soundy\SoundyPoolerEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\GUI\Scripts\DGUI\Database.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\GUI\Scripts\DGUI\AnimatedTexture.cs" />
@@ -309,6 +326,7 @@
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Nody\Editors\SwitchBackNodeEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Progress\ProgressTargetAnimatorEditor.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\UI\Nodes\GUIs\RandomNodeGUI.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Editor\UIExtensionsMenuOptions.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Editor\Windows\DoozyWindowDrawViewThemes.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -564,11 +582,11 @@
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>Library\PackageCache\com.unity.analytics@3.5.3\Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.5\net35\unity-custom\nunit.framework.dll</HintPath>
-    </Reference>
     <Reference Include="DDebug">
       <HintPath>Assets\TributeToChiefs\_3rdParty\Doozy\Engine\Debug\DDebug.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.5\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>H:\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
