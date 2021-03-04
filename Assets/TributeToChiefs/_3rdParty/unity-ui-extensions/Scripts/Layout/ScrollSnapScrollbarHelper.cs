@@ -8,7 +8,7 @@ namespace UnityEngine.UI.Extensions
 {
     public class ScrollSnapScrollbarHelper : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
     {
-
+        int counter = 0;
         internal IScrollSnap ss;
 
         public void OnBeginDrag(PointerEventData eventData)
@@ -43,12 +43,16 @@ namespace UnityEngine.UI.Extensions
                 ss.SetLerp(false);
                 ss.StartScreenChange();
             }
+            counter--;
+            Debug.Log(counter);
         }
 
         void OnScrollBarUp()
         {
             ss.SetLerp(true);
             ss.ChangePage(ss.CurrentPage());
+            counter++;
+            Debug.Log(counter);
         }
     }
 }

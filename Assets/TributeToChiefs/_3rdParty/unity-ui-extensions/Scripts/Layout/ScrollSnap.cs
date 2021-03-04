@@ -448,7 +448,6 @@ namespace UnityEngine.UI.Extensions
             }
 
             float page = pos / _itemSize;
-
             return Mathf.Clamp(Mathf.RoundToInt(page), 0, _pages);
         }
 

@@ -11,17 +11,17 @@ public class DragDetector : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
     private void Start()
     {
-        bottomPanel = GetComponentInParent<BottomPanelHandler>();
+        //bottomPanel = GetComponentInParent<BottomPanelHandler>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        bottomPanel.PauseSlideShow();
+        //bottomPanel.PauseSlideShow();
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        bottomPanel.PauseSlideShow();
+        //bottomPanel.PauseSlideShow();
     }
 
     public void OnEndDrag(PointerEventData eventData)

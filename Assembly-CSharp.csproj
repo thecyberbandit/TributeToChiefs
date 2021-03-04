@@ -384,12 +384,13 @@
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Integrations\Playmaker\Actions\DoozyUI\UnloadScene.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Scripts\Controls\ReorderableList\ReorderableListDebug.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Scripts\Effects\ShineEffect.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\UIFader\UIFader.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Engine\UI\Enums\TargetOrientation.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Engine\UI\Input\BackButton.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Scripts\Layout\FancyScrollViewCell.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Doozy\Engine\Progress\Enums\TargetProgress.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
-    <Compile Include="Assets\TributeToChiefs\_3rdParty\Swipe Menu\swipeMenu\swipe.cs" />
+    <Compile Include="Assets\TributeToChiefs\_3rdParty\SwipeMenu\swipeMenu\swipe.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Scripts\Layout\RadialLayout.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Scripts\Controls\SegmentedControl.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
@@ -522,7 +523,6 @@
     <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Scripts\Layout\TableLayoutGroup.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Scripts\Controls\ColorPicker\ColorImage.cs" />
     <Compile Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Scripts\Layout\ScrollSnap.cs" />
-    <Compile Include="Assets\TributeToChiefs\_3rdParty\UIFader\UIFader.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TributeToChiefs\_3rdParty\unity-ui-extensions\Resources\Shaders\UIAdditive.shader" />

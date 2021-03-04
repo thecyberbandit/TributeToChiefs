@@ -9,16 +9,6 @@ public class UIManager : MonoBehaviour
     public static UIManager instance;
     
     public SlideshowController[] slideshowControllers = new SlideshowController[4];
-
-    //[HideInInspector]
-    public bool landingpageDisplay1;
-    [HideInInspector]
-    public bool landingpageDisplay2;
-    [HideInInspector]
-    public bool landingpageDisplay3;
-    [HideInInspector]
-    public bool landingpageDisplay4;
-
     //[HideInInspector]
     public bool slideShowDisplay1;
     [HideInInspector]
@@ -39,11 +29,6 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        landingpageDisplay1 = true;
-        landingpageDisplay2 = true;
-        landingpageDisplay3 = true;
-        landingpageDisplay4 = true;
-
         slideShowDisplay1 = false;
         slideShowDisplay2 = false;
         slideShowDisplay3 = false;
@@ -53,88 +38,62 @@ public class UIManager : MonoBehaviour
     private void Update()
     {
         //user has entered withing the range of the sensor
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) && !slideShowDisplay1)
         {
-            slideShowDisplay1 = true;
-            landingpageDisplay1 = false;
             Debug.Log("W pressed");
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            slideShowDisplay2 = true;
-            landingpageDisplay2 = false;
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            slideShowDisplay3 = true;
-            landingpageDisplay3 = false;
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            slideShowDisplay4 = true;
-            landingpageDisplay4 = false;
-        }
-
-        //user has left the range of the sensor
-        //if (Input.GetKeyUp(KeyCode.W))
-        //{
-        //    slideShowDisplay1 = false;
-        //    landingpageDisplay1 = true;
-        //}
-        //if (Input.GetKeyUp(KeyCode.DownArrow))
-        //{
-        //    slideShowDisplay2 = false;
-        //    landingpageDisplay2 = true;
-        //}
-        //if (Input.GetKeyUp(KeyCode.RightArrow))
-        //{
-        //    slideShowDisplay3 = false;
-        //    slideShowDisplay3 = true;
-        //}
-        //if (Input.GetKeyUp(KeyCode.LeftArrow))
-        //{
-        //    slideShowDisplay4 = false;
-        //    landingpageDisplay4 = true;
-        //}
-
-        //start slideshow
-        if (slideShowDisplay1)
-        {
+            slideshowControllers[0].canDisplay = true;
             slideshowControllers[0].SlideShow();
-            slideShowDisplay1 = false;
+            slideShowDisplay1 = true;
         }
-        //if (slideShowDisplay2)
-        //{
-        //    slideshowControllers[1].SlideShow();
-        //    slideShowDisplay2 = false;
-        //}
-        //if (slideShowDisplay3)
-        //{
-        //    slideshowControllers[2].SlideShow();
-        //    slideShowDisplay3 = false;
-        //}
-        //if (slideShowDisplay4)
-        //{
-        //    slideshowControllers[3].SlideShow();
-        //    slideShowDisplay4 = false;
-        //}
+        if (Input.GetKey(KeyCode.A) && !slideShowDisplay2)
+        {
+            Debug.Log("A pressed");
+            slideshowControllers[1].canDisplay = true;
+            slideshowControllers[1].SlideShow();
+            slideShowDisplay2 = true;
+        }
+        if (Input.GetKey(KeyCode.S) && !slideShowDisplay3)
+        {
+            Debug.Log("S pressed");
+            slideshowControllers[2].canDisplay = true;
+            slideshowControllers[2].SlideShow();
+            slideShowDisplay3 = true;
+        }
+        if (Input.GetKey(KeyCode.D) && !slideShowDisplay4)
+        {
+            Debug.Log("D pressed");
+            slideshowControllers[3].canDisplay = true;
+            slideshowControllers[3].SlideShow();
+            slideShowDisplay4 = true;
+        }
 
-        //show landing page
-        //if (landingpageDisplay1)
-        //{
-        //    slideshowControllers[0].ShowLandingPage();
-        //}
-        //if (landingpageDisplay2)
-        //{
-        //    slideshowControllers[1].ShowLandingPage();
-        //}
-        //if (landingpageDisplay3)
-        //{
-        //    slideshowControllers[2].ShowLandingPage();
-        //}
-        //if (landingpageDisplay4)
-        //{
-        //    slideshowControllers[3].ShowLandingPage();
-        //}
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            Debug.Log("W gone");
+            slideshowControllers[0].canDisplay = false;
+            slideShowDisplay1 = false;
+            slideshowControllers[0].ShowLandingPage();
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            Debug.Log("A gone");
+            slideshowControllers[1].canDisplay = false;
+            slideShowDisplay2 = false;
+            slideshowControllers[1].ShowLandingPage();
+        }
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            Debug.Log("S gone");
+            slideshowControllers[2].canDisplay = false;
+            slideShowDisplay3 = false;
+            slideshowControllers[2].ShowLandingPage();
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            Debug.Log("D gone");
+            slideshowControllers[3].canDisplay = false;
+            slideShowDisplay4 = false;
+            slideshowControllers[3].ShowLandingPage();
+        }
     }
 }

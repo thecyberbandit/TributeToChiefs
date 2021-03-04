@@ -32,6 +32,8 @@ public class SlideshowController : MonoBehaviour
     public Tween tween;
     [HideInInspector]
     public Tween tweenback;
+    //[HideInInspector]
+    public bool canDisplay;
 
     private int currentID;
     private Sprite slideSprite;
@@ -45,6 +47,9 @@ public class SlideshowController : MonoBehaviour
         renderTexture.Release();
         slideAnim = slide.GetComponent<Animator>();
         slideImage = slide.GetComponent<Image>();
+        canDisplay = false;
+
+        ShowLandingPage();
     }
 
     public void ShowLandingPage()
@@ -52,6 +57,7 @@ public class SlideshowController : MonoBehaviour
         //scrollbar.SetActive(false);
         //nextButton.SetActive(false);
         //prevButton.SetActive(false);
+        //DOTween.PauseAll();
         slideImage.canvasRenderer.SetAlpha(1f);
         slideAnim.SetTrigger("idle");
         slideImage.sprite = landingPage;
@@ -69,12 +75,6 @@ public class SlideshowController : MonoBehaviour
 
     public void SlideShow()
     {
-        //landingPage.DOAnchorPos(new Vector2(-2700, 0), 0f).SetDelay(1f);
-        //rectTransforms[currentID].DOAnchorPos(new Vector2(2700, 0), 0f);
-        //scrollbar.SetActive(true);
-        //nextButton.SetActive(true);
-        //prevButton.SetActive(true);
-        //InvokeRepeating("Slides", 0f, 81.5f);
         InvokeRepeating("SlideChanger", 0f, slideshowDelay);
     }
 
@@ -87,12 +87,15 @@ public class SlideshowController : MonoBehaviour
     {
         for (int i = 0; i < chiefSprites.Length; i++)
         {
-            //renderTexture.Release();
-            slideAnim.SetTrigger("idle");
-            slideImage.sprite = chiefSprites[i];
+            if (canDisplay)
+            {
+                //renderTexture.Release();
+                slideAnim.SetTrigger("idle");
+                slideImage.sprite = chiefSprites[i];
 
-            MoveSlides(i, new Vector2(0, 0), 1f, Ease.OutFlash);
-            yield return new WaitForSeconds(5f);
+                MoveSlides(i, new Vector2(0, 0), 1f, Ease.OutFlash);
+                yield return new WaitForSeconds(5f);
+            }
         }
     }
 
@@ -107,14 +110,6 @@ public class SlideshowController : MonoBehaviour
             delay += 10f;
         }
     }
-
-    //public void ShowSlide(int ID)
-    //{
-    //    rectTransforms[currentID].DOAnchorPos(new Vector2(2700, 0), 0f).SetDelay(0f);
-    //    rectTransforms[ID].DOAnchorPos(new Vector2(0, 0), 0.5f).SetDelay(0f);
-    //    currentID = ID;
-    //    //Debug.Log(ID);
-    //}
 
     void MoveSlides(int id, Vector2 position, float moveTime, Ease ease)
     {
